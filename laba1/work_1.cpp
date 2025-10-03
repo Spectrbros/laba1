@@ -339,11 +339,11 @@
 						bitNum = bitNum - 32;
 						unsigned int maskChange = 1 << (bit - bitNum);
 						if (bitValue == 1) {
-							memory.tool[1] = memory.tool[1] | maskChange;
+							memory.tool[0] = memory.tool[0] | maskChange;
 							cout << memory.num << endl;
 						}
 						if (bitValue == 0) {
-							memory.tool[1] = memory.tool[1] & (~maskChange);
+							memory.tool[0] = memory.tool[0] & (~maskChange);
 							cout << memory.num << endl;
 						}
 					}
